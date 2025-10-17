@@ -23,8 +23,8 @@ namespace CarLotSimulator
             car2.Model = "DB5";
             car2.IsDriveable = true;
             
-            car2.EngineNoise = "Roar";
-            car2.HonkNoise = "Honk";
+            car2.MakeEngineNoise("Roar");
+            car2.MakeHonkNoise("Honk");
             
             var car3 = new Car(1927, "Ford", "Model T", false);
             car3.MakeEngineNoise("Sputter-Putt-Sputter");

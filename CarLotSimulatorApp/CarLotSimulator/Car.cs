@@ -13,13 +13,13 @@ public class Car
 
     public void MakeEngineNoise(string engineNoise)
     {
-        EngineNoise = "engineNoise";
+        EngineNoise = engineNoise;
         Console.WriteLine($"Listening to a {Year} {Make} {Model}, I hear the sound of its engine, {EngineNoise}");
     }
 
     public void MakeHonkNoise(string honkNoise)
     {
-        HonkNoise = "honkNoise";
+        HonkNoise = honkNoise;
         Console.WriteLine($"When the horn of a {Year} {Make} {Model} is played, {HonkNoise} is heared");
     }
 
