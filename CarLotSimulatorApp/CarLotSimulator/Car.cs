@@ -25,14 +25,20 @@ public class Car
 
     public Car()
     {
-        
+        // This line of code increments the instances of the Car class which are passed through the default constructor;
+        // This line of code fails to increment the instances passed through the custom constructor (parameterized constructor).
+        CarLot.numberOfCars = CarLot.numberOfCars + 1;
     }
 
-    public Car(int year, string make, string model, bool isDriveable)
+    public Car(int aYear, string aMake, string aModel, bool aIsDriveable)
     {
-        Year = year;
-        Make = make;
-        Model = model;
-        IsDriveable = isDriveable;
+        // This line of code increments the instances of the Car class which are passed through the custom constructor;
+        // This line of code fails to increment the instances passed through the default constructor.
+        CarLot.numberOfCars = CarLot.numberOfCars + 1;
+        
+        Year = aYear;
+        Make = aMake;
+        Model = aModel;
+        IsDriveable = aIsDriveable;
     }
 }
